@@ -9,25 +9,48 @@
 </head>
 
 <body>
-  <script src="script.js"></script>
-  Welcome to Sunny Tour! Łukasz is so awesome and doesn't know how to JS! :D <br>
-  <br>
-
-  
-    How many adults: <br>
-    <input type="number" id="adults"> <br>
- 
- 
-    How many children: <br>
-    <input type="number" id="children"> <br>
-  
-  
-  <br>
-
-  <button onclick=startProgram()> Calculate </button>
-  <p id="results">Here will appear the results.</p>
-
-
+  <div id=pageContainer>
+    <div id=contentWrap>
+      <script src="script.js"></script>
+      
+      <header>
+        <h1>Welcome to Sunny Tour! Łukasz is so awesome and doesn't know how to JS! :D </h1> <br><br>
+      </header>
+    
+      <section id=topSection>
+        <div id=prices>
+          <p id=pricePrice>Prices:</p><br><br>
+          <p id=priceHotel>
+          Hotel:<br>
+          Adults: £60<br>
+          Children (aka little monsters): £20</p><br>
+          <p id=priceFare><br><br>
+          Fares:<br>
+          Adults: £210<br>
+          Children (aka little monsters): £110</p><br>
+        </div>
+      </section>
+    
+      
+      <section id=bottomSection>
+        <div id=boxes>
+          How many adults: <br>
+          <input type="number" id="adults"> <br>
+          How many children: <br>
+          <input type="number" id="children"> 
+        </div>
+        <br><br>
+        <button id=buttonCalculate onclick=startProgram()> Calculate </button>
+        <p id="results"></p>
+      </section>
+      
+      <footer id=footer>
+          <div id=footerWrap>
+            <p id=footerContent> No judgment for the colours pls ^.^ </p>
+          </div>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>

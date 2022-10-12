@@ -8,10 +8,10 @@ function startProgram() {
   readResults();
   function readResults() { 
 
-    var howManyAdults = document.getElementById('adults').value;
-    var howManyChildren = document.getElementById('children').value;
-    console.log(adults.value,children.value);
-    calculation(adults,children);
+    var howManyAdults = document.getElementById('adults').value; //getting value from input box "adults"
+    var howManyChildren = document.getElementById('children').value; //getting value from input box "children"
+    console.log(adults.value,children.value); //checking if values are correctly imported
+    calculation();
       function calculation () {
         
         var totalAdultHotel = howManyAdults * hotelAdultBill; //counts adults bill for the hotel  
@@ -20,7 +20,7 @@ function startProgram() {
         var totalAdultFare = howManyAdults * fareAdult;
         var totalChildrenFare = howManyChildren * fareChild;
         var totalTotal = totalAdultFare + totalAdultHotel + totalChildrenFare + totalChildrenHotel;
-        document.getElementById("results").innerHTML = totalTotal;
+        document.getElementById("results").innerHTML = "The total cost will be:" + "£" + totalTotal;
       }
     
   }

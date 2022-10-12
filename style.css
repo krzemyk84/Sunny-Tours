@@ -1,4 +1,64 @@
-html, body {
-  height: 100%;
+body {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  font-family: Tahoma;
+  }
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+#contentWrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+header {
+  background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+  
+}
+#topSection {
+/*   background-color: red; */
+}
+section {
+/*   background-color: black; */
+  padding:10px;
+  text-align: center;
+  font-size: 14px;
+/*   color: #000000; */
+}
+#boxes {
+  background-color: #f2f207;
+  border-radius: 8px;
+  border: 40px, #000000, solid;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+#results {
+  font-size: 14px;
+  margin-top: 40px;
+  font-weight: bold;
+  
+}
+footer{
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+ 
+#priceHotel, #priceFare,#pricePrice {
+
+  box-align: center; 
+  margin: auto;
+  width: 300px;
+/*   background-color: black; */
+  font-weight: bold;
+/*   margin: 0px; */
+  padding: 0px;
 }
