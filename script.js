@@ -3,25 +3,30 @@ const hotelChildBill = 20;
 const fareAdult = 210;
 const fareChild = 110;
 
-const startProgram = () => { // function containing inputs and calculations
+function startProgram() {
 
+  readResults();
+  function readResults() { 
 
-
-  //var howManyAdults = prompt ("How many adults? "); //input number of adults
-  //var howManyChildren = prompt ("How many children? "); //input number of children
-
-  var totalAdultHotel = howManyAdults * hotelAdultBill; //counts adults bill for the hotel  
-  var totalChildrenHotel = howManyChildren * hotelChildBill; // counts children bill for the hotel
-
-  var totalAdultFare = howManyAdults * fareAdult;
-  var totalChildrenFare = howManyChildren * fareChild;
-  var totalTotal = totalAdultFare + totalAdultHotel + totalAdultFare + totalChildrenFare;
-
+    var howManyAdults = document.getElementById('adults').value;
+    var howManyChildren = document.getElementById('children').value;
+    console.log(adults.value,children.value);
+    calculation(adults,children);
+      function calculation () {
+        
+        var totalAdultHotel = howManyAdults * hotelAdultBill; //counts adults bill for the hotel  
+        var totalChildrenHotel = howManyChildren * hotelChildBill; // counts children bill for the hotel
+      
+        var totalAdultFare = howManyAdults * fareAdult;
+        var totalChildrenFare = howManyChildren * fareChild;
+        var totalTotal = totalAdultFare + totalAdultHotel + totalChildrenFare + totalChildrenHotel;
+        document.getElementById("results").innerHTML = totalTotal;
+      }
+    
+  }
+  
   
 }
-startProgram ();
+// startProgram ();
 
-function showResults() {
-  document.getElementById("results").innerHTML = "total";
-}
 
